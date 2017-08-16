@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.blueocean.web.pharmacymanage.dao.CommonResourcesDoMapper">
+
+
+	<resultMap id="ChildenRgionResultMap" type="com.blueocean.web.pharmacymanage.dto.RegionDo">
+		<id column="REGION_ID" property="value" jdbcType="INTEGER" />
+		<result column="REGION_NAME" property="label" jdbcType="VARCHAR" />
+		<collection property="children" javaType="java.util.ArrayList"
+			column="REGION_ID" ofType="com.blueocean.web.pharmacymanage.dto.RegionDo" select="selectRegionInfo"></collection>
+	</resultMap>
+	<select id="selectRegionInfo" resultMap="ChildenRgionResultMap"
+		parameterType="java.lang.Integer">
+		select
+		REGION_ID,REGION_CODE,REGION_NAME,PARENT_ID,REGION_LEVEL,
+		REGION_ORDER,REGION_NAME_EN,REGION_SHORTNAME_EN
+		from region
+		where
+		PARENT_ID=#{parentId}
+		ORDER BY REGION_ID ASC
+	</select>
+</mapper>
