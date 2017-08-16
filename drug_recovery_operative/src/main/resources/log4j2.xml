@@ -47,11 +47,11 @@
     <logger name = "org.springframework" level = "INFO"/>
     <logger name = "org.springframework.web" level = "INFO"/>
     <!-- 打印详细的Dao轨迹，可以是具体包名、类名或者方法名 -->
-    <logger name = "com.bbf.db.single.dao.QdComputerDao"
+    <logger name = "com.blueocean.common.util.QdComputerDao"
             level = "TRACE" additivity = "false">
       <appender-ref ref = "Console"/>
     </logger>
-    <logger name = "com.bbf.db.single.util.LogAspectUtil"
+    <logger name = "com.blueocean.common.util.LogAspectUtil"
             level = "DEBUG" additivity = "false">
       <appender-ref ref = "Console"/>
     </logger>
