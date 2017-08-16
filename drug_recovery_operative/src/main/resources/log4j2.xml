@@ -47,7 +47,7 @@
     <logger name = "org.springframework" level = "INFO"/>
     <logger name = "org.springframework.web" level = "INFO"/>
     <!-- 打印详细的Dao轨迹，可以是具体包名、类名或者方法名 -->
-    <logger name = "com.blueocean.common.util.QdComputerDao"
+    <logger name = "com.blueocean.web.pharmacymanage.*Mapper"
             level = "TRACE" additivity = "false">
       <appender-ref ref = "Console"/>
     </logger>
