@@ -40,7 +40,8 @@ public final class DruidCommonConfiguration {
     // 添加过滤规则
     filterRegistrationBean.addUrlPatterns("/*");
     // 忽略资源
-    filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.jpeg,*.png,*.css,*.ico,/druid/*");
+    filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.jpeg,*.png,*.css,*.ico,"
+    		+ "*.svg,*.ttf,*.eot,*.woff,/druid/*");
     // 配置profileEnable能够监控单个url调用的sql列表
     filterRegistrationBean.addInitParameter("profileEnable", "true");
     // 开启session统计功能
