@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,7 +22,7 @@ public class CommonResourcesCotroller {
 	@Resource
 	private CommonResources commonResources;
 	
-	private static final Logger _log = LoggerFactory.getLogger(CommonResourcesCotroller.class);
+	private static Logger _log = LogManager.getLogger(CommonResourcesCotroller.class);
 
 	/**
 	 * @author zhangyalin 城市列表
