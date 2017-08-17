@@ -6,8 +6,8 @@
   </parent>  
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>SpringBoot</groupId>
-  <artifactId>SpringBoot</artifactId>
+  <groupId>drug_recovery_operative</groupId>
+  <artifactId>drug_recovery_operative</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <properties>
@@ -39,18 +39,6 @@
     <pom.log.filesize>10M</pom.log.filesize><!-- 日志切割的最小单位 -->
     <pom.log.level>INFO</pom.log.level><!-- 日志输出级别 -->
   </properties>
-  <!-- SpringCloud -->
-  <dependencyManagement>
-  	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-dependencies</artifactId>
-			<version>Camden.SR5</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-	</dependencies>
-  </dependencyManagement>
   
   <dependencies>
 	<!-- SpringBoot相关依赖 -->
