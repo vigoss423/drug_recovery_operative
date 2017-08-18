@@ -34,7 +34,7 @@
 
     <!-- 日志 -->
     <pom.log.dir>../logs/operation</pom.log.dir>
-    <pom.log.name>springboot</pom.log.name>
+    <pom.log.name>drug_operation</pom.log.name>
     <pom.log.dir.backup>backup</pom.log.dir.backup>
     <pom.log.filesize>10M</pom.log.filesize><!-- 日志切割的最小单位 -->
     <pom.log.level>INFO</pom.log.level><!-- 日志输出级别 -->
