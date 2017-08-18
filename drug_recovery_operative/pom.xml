@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>drug_recovery_operative</groupId>
   <artifactId>drug_recovery_operative</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <properties>
     <!-- base setting -->
@@ -33,7 +33,7 @@
     <com.github.pagehelper.version>4.1.6</com.github.pagehelper.version>
 
     <!-- 日志 -->
-    <pom.log.dir>E:/logs/springboot</pom.log.dir>
+    <pom.log.dir>../logs/operation</pom.log.dir>
     <pom.log.name>springboot</pom.log.name>
     <pom.log.dir.backup>backup</pom.log.dir.backup>
     <pom.log.filesize>10M</pom.log.filesize><!-- 日志切割的最小单位 -->
@@ -181,13 +181,13 @@
           <aggregate>true</aggregate>
         </configuration>
       </plugin>
-      <!-- 打包同时生成源码包 -->
+      <!-- 打包同时生成源码包 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>${maven-source-plugin.version}</version>
         <configuration>
-          <!--<encoding>UTF-8</encoding>-->
+          <encoding>UTF-8</encoding>
         </configuration>
         <executions>
           <execution>
@@ -198,7 +198,7 @@
           </execution>
         </executions>
       </plugin>
-      
+      -->
       <plugin>
         <groupId>org.mybatis.generator</groupId>
         <artifactId>mybatis-generator-maven-plugin</artifactId>
